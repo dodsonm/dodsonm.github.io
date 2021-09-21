@@ -17,8 +17,6 @@
   },
   "homepage": "https://github.com/dodsonm/dodsonm.github.io#readme",
   "devDependencies": {
-    "sass": "^1.42.0",
-    "webpack": "^5.53.0",
-    "webpack-cli": "^4.8.0"
+    "sass": "^1.42.0"
   }
 }
