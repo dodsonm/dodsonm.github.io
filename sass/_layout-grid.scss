@@ -1,3 +1,6 @@
+/**
+ * OUTERMOST PAGE FRAME
+**/
 .grd-page-cntr {
   background-color: white;
   display: grid;
@@ -24,6 +27,9 @@
   background-color: slategray;
   grid-area: foot;
 }
+/**
+ * MASTHEAD
+**/
 .grd-mast-cntr {
   display: grid;
   grid-template-areas:
@@ -32,17 +38,18 @@
     'dek dek dek dek'
     'prev prev next next'
   ;
-  /*FPO*/
-  /* min-height: 562px; */
 }
 .grd-mast-copy {
+  align-self: center;
   grid-area: copy;
 }
 .grd-mast-main {
   grid-area: main;
 }
 .grd-mast-cred {
+  align-self: center;
   grid-area: cred;
+  justify-self: end;
 }
 .grd-mast-hed {
   grid-area: hed;

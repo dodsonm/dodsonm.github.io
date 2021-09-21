@@ -12,6 +12,9 @@ nav {
   text-align: center;
 }
 
+/**
+ * OUTERMOST PAGE FRAME
+**/
 .grd-page-cntr {
   background-color: white;
   display: grid;
@@ -39,14 +42,16 @@ nav {
   grid-area: foot;
 }
 
+/**
+ * MASTHEAD
+**/
 .grd-mast-cntr {
   display: grid;
   grid-template-areas: "copy main main cred" "hed hed hed hed" "dek dek dek dek" "prev prev next next";
-  /*FPO*/
-  /* min-height: 562px; */
 }
 
 .grd-mast-copy {
+  align-self: center;
   grid-area: copy;
 }
 
@@ -55,7 +60,9 @@ nav {
 }
 
 .grd-mast-cred {
+  align-self: center;
   grid-area: cred;
+  justify-self: end;
 }
 
 .grd-mast-hed {
@@ -75,6 +82,13 @@ nav {
   text-align: right;
 }
 
+h1 sup, h4 sup {
+  display: block;
+  font-size: 0.5em;
+  margin-top: 1em;
+  top: -0.125em;
+}
+
 .mast-main {
   text-align: center;
 }
@@ -83,10 +97,21 @@ nav {
   text-transform: uppercase;
 }
 .mast-main h1 sup {
-  display: block;
   font-size: 0.25em;
-  margin-top: 1em;
-  top: 0;
+}
+
+.mast-copy {
+  margin: 0.625rem;
+}
+.mast-copy h4 {
+  font-size: 1.5625em;
+}
+.mast-copy p {
+  font-size: 1.25em;
+}
+
+.mast-end {
+  text-align: right;
 }
 
 body {
