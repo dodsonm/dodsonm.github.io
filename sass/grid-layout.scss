@@ -1,0 +1,59 @@
+.grd-page-cntr {
+  background-color: white;
+  display: grid;
+  grid-template-areas:
+    'navi navi'
+    'head head'
+    'main-left main-right'
+    'foot foot'
+  ;
+}
+.grd-head {
+  grid-area: head;
+}
+.grd-navi {
+  grid-area: navi;
+}
+.grd-main-left {
+  grid-area: main-left;
+}
+.grd-main-right {
+  grid-area: main-right;
+}
+.grd-foot {
+  background-color: slategray;
+  grid-area: foot;
+}
+.grd-mast-cntr {
+  display: grid;
+  grid-template-areas:
+    'copy main main cred'
+    'hed hed hed hed'
+    'dek dek dek dek'
+    'prev prev next next'
+  ;
+  /*FPO*/
+  /* min-height: 562px; */
+}
+.grd-mast-copy {
+  grid-area: copy;
+}
+.grd-mast-main {
+  grid-area: main;
+}
+.grd-mast-cred {
+  grid-area: cred;
+}
+.grd-mast-hed {
+  grid-area: hed;
+}
+.grd-mast-dek {
+  grid-area: dek;
+}
+.grd-mast-prev {
+  grid-area: prev;
+}
+.grd-mast-next {
+  grid-area: next;
+  text-align: right;
+}
