@@ -1,15 +1,12 @@
-h1, h4 {
-  sup {
-    display: block;
-    font-size: 0.5em;
-    margin-top: 1em;
-    top: -0.125em;
+.mast-head {
+  h1, h4 {
+    sup {
+      display: block;
+      font-size: 0.5em;
+      margin-top: 1em;
+      top: -0.125em;
+    }
   }
-}
-
-.mast-main {
-  text-align: center;
-
   h1 {
     font-size: 6.25em;
     text-transform: uppercase;
@@ -18,10 +15,12 @@ h1, h4 {
       font-size: 0.25em;
     }
   }
-}
-.mast-copy {
-  margin: 0.625rem;
-
+  h2 {
+    font-size: 3.125em;
+  }
+  h3 {
+    font-size: 1.875em;
+  }
   h4 {
     font-size: 1.5625em;
   }
@@ -29,6 +28,34 @@ h1, h4 {
     font-size: 1.25em;
   }
 }
+.mast-main {
+  padding-bottom: 1.25em;
+}
+.mast-main, .mast-hed, .mast-dek {
+  text-align: center;
+}
+.mast-copy {
+  margin: 0.625rem;
+}
 .mast-end {
   text-align: right;
+}
+.mast-hed, .mast-dek, .mast-foot {
+  h2, h3 {
+    font-family: Cabin, sans-serif;
+    line-height: 1.2em;
+  }
+  h3 {
+    font-weight: 500;
+  }
+}
+.mast-hed {
+  padding-top: 1em;
+}
+.mast-dek {
+  padding-bottom: 1em;
+}
+.mast-foot {
+  padding-left: 0.25em;
+  padding-right: 0.25em;
 }

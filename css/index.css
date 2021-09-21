@@ -1,8 +1,9 @@
 body {
   font-size: 16px;
+  line-height: 1.25;
 }
 
-h1 {
+h1, h2, h3, h4, h5, h6 {
   font-weight: bold;
 }
 
@@ -47,7 +48,7 @@ nav {
 **/
 .grd-mast-cntr {
   display: grid;
-  grid-template-areas: "copy main main cred" "hed hed hed hed" "dek dek dek dek" "prev prev next next";
+  grid-template-areas: "copy main main cred" "hed hed hed hed" "dek dek dek dek" "left left right right";
 }
 
 .grd-mast-copy {
@@ -73,45 +74,76 @@ nav {
   grid-area: dek;
 }
 
-.grd-mast-prev {
-  grid-area: prev;
+.grd-mast-left {
+  grid-area: left;
 }
 
-.grd-mast-next {
-  grid-area: next;
+.grd-mast-right {
+  grid-area: right;
   text-align: right;
 }
 
-h1 sup, h4 sup {
+.mast-head h1 sup, .mast-head h4 sup {
   display: block;
   font-size: 0.5em;
   margin-top: 1em;
   top: -0.125em;
 }
-
-.mast-main {
-  text-align: center;
-}
-.mast-main h1 {
+.mast-head h1 {
   font-size: 6.25em;
   text-transform: uppercase;
 }
-.mast-main h1 sup {
+.mast-head h1 sup {
   font-size: 0.25em;
+}
+.mast-head h2 {
+  font-size: 3.125em;
+}
+.mast-head h3 {
+  font-size: 1.875em;
+}
+.mast-head h4 {
+  font-size: 1.5625em;
+}
+.mast-head p {
+  font-size: 1.25em;
+}
+
+.mast-main {
+  padding-bottom: 1.25em;
+}
+
+.mast-main, .mast-hed, .mast-dek {
+  text-align: center;
 }
 
 .mast-copy {
   margin: 0.625rem;
 }
-.mast-copy h4 {
-  font-size: 1.5625em;
-}
-.mast-copy p {
-  font-size: 1.25em;
-}
 
 .mast-end {
   text-align: right;
+}
+
+.mast-hed h2, .mast-hed h3, .mast-dek h2, .mast-dek h3, .mast-foot h2, .mast-foot h3 {
+  font-family: Cabin, sans-serif;
+  line-height: 1.2em;
+}
+.mast-hed h3, .mast-dek h3, .mast-foot h3 {
+  font-weight: 500;
+}
+
+.mast-hed {
+  padding-top: 1em;
+}
+
+.mast-dek {
+  padding-bottom: 1em;
+}
+
+.mast-foot {
+  padding-left: 0.25em;
+  padding-right: 0.25em;
 }
 
 body {
@@ -120,6 +152,10 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "Cabin Condensed", sans-serif;
+}
+
+h4, h5, h6 {
+  font-weight: 500;
 }
 
 .dark {

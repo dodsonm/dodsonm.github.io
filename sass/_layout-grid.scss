@@ -36,7 +36,7 @@
     'copy main main cred'
     'hed hed hed hed'
     'dek dek dek dek'
-    'prev prev next next'
+    'left left right right'
   ;
 }
 .grd-mast-copy {
@@ -57,10 +57,10 @@
 .grd-mast-dek {
   grid-area: dek;
 }
-.grd-mast-prev {
-  grid-area: prev;
+.grd-mast-left {
+  grid-area: left;
 }
-.grd-mast-next {
-  grid-area: next;
+.grd-mast-right {
+  grid-area: right;
   text-align: right;
 }
