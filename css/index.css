@@ -13,6 +13,10 @@ nav {
   text-align: center;
 }
 
+footer {
+  text-align: center;
+}
+
 /**
  * OUTERMOST PAGE FRAME
 **/
@@ -142,8 +146,22 @@ nav {
 }
 
 .mast-foot {
-  padding-left: 0.25em;
-  padding-right: 0.25em;
+  padding-left: 0.625em;
+  padding-right: 0.625em;
+}
+
+.project-summary {
+  margin: 1em 0.625em;
+}
+.project-summary h1 {
+  font-size: 1.875em;
+}
+.project-summary p {
+  font-size: 1.25em;
+}
+.project-summary aside {
+  display: inline-block;
+  float: right;
 }
 
 body {
