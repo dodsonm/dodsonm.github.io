@@ -1,6 +1,16 @@
 body {
   font-family: 'Cabin', sans-serif;
 }
+a {
+  color: goldenrod;
+
+  &:hover {
+    color: lighten(goldenrod, 10%);
+  }
+  &:visited {
+    color: darken(goldenrod, 10%);
+  }
+}
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Cabin Condensed', sans-serif;
 }
