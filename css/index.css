@@ -171,6 +171,112 @@ footer {
   float: right;
 }
 
+/**
+  Suffix Definitions for Media Queries
+  -mp: at mobile portrait resolution
+  -tp: at tablet portrait resolution
+  -dt: at desktop resolution
+  -hd: at HD desktop resolution
+ */
+.notey-splash {
+  box-shadow: #000 0 0 3rem -1rem;
+  color: #444;
+  font-family: "Cabin", sans-serif;
+  height: 24rem;
+  left: 50%;
+  position: fixed;
+  top: 33%;
+  transform: translate(-50%, -33%);
+  width: 38.832rem;
+}
+
+.notey-head {
+  background-color: #F5A623ee;
+  border-top-left-radius: 0.4rem;
+  border-top-right-radius: 0.4rem;
+  color: white;
+  font-family: "Cabin Condensed", sans-serif;
+  font-size: 2em;
+  font-weight: 700;
+  height: 4rem;
+  opacity: 1;
+  text-align: center;
+  text-transform: uppercase;
+}
+.notey-head h1 {
+  line-height: 1;
+  opacity: 0;
+}
+.notey-head .notey-close {
+  color: #ffc;
+  font-size: 0.4375em;
+  position: absolute;
+  right: 4px;
+  top: 4px;
+}
+.notey-head .notey-close:visited {
+  color: #ffc;
+}
+.notey-head .notey-close:hover {
+  color: #fff;
+}
+
+.notey-body, .notey-foot {
+  background-color: #FFFFFFee;
+}
+
+.notey-body {
+  border-left: solid 1px #aaa;
+  border-right: solid 1px #aaa;
+  font-size: 1.4em;
+  height: 18rem;
+  line-height: 1.25;
+  padding: 1em;
+}
+.notey-body p {
+  margin-bottom: 0.5625em;
+  opacity: 0;
+}
+.notey-body a, .notey-body a:visited {
+  color: #69ac00;
+}
+.notey-body a:hover, .notey-body a:visited:hover {
+  color: #88df00;
+}
+.notey-body .ico-strip {
+  bottom: 0rem;
+  color: #CCC;
+  float: right;
+  font-size: 5rem;
+  position: absolute;
+  right: 2rem;
+}
+
+.notey-foot {
+  border-bottom: solid 1px #aaa;
+  border-left: solid 1px #aaa;
+  border-right: solid 1px #aaa;
+  color: #ccc;
+  height: 2rem;
+  text-align: center;
+}
+.notey-foot .notey-close {
+  color: #666;
+}
+.notey-foot .notey-close:visited {
+  color: #666;
+}
+.notey-foot .notey-close:hover {
+  color: #999;
+}
+
+.notey-close {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
 body {
   font-family: "Cabin", sans-serif;
 }
