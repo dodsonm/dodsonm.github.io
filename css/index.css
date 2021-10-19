@@ -244,12 +244,12 @@ footer {
   color: #88df00;
 }
 .notey-body .ico-strip {
-  bottom: 0rem;
+  bottom: -1rem;
   color: #CCC;
   float: right;
   font-size: 5rem;
   position: absolute;
-  right: 2rem;
+  right: 1.5rem;
 }
 
 .notey-foot {
