@@ -29,7 +29,7 @@ footer {
 .grd-page-cntr {
   background-color: white;
   display: grid;
-  grid-template-areas: "navi navi" "head head" "main-left main-right" "foot foot";
+  grid-template-areas: "navi navi" "head head" "callout callout" "main-left main-right" "foot foot";
 }
 
 .grd-head {
@@ -38,6 +38,10 @@ footer {
 
 .grd-navi {
   grid-area: navi;
+}
+
+.grd-callout {
+  grid-area: callout;
 }
 
 .grd-main-left {
@@ -119,7 +123,7 @@ footer {
 }
 
 .mast-main {
-  padding-bottom: 1.25em;
+  padding-bottom: 1em;
 }
 
 .mast-main, .mast-hed, .mast-dek {
@@ -156,6 +160,48 @@ footer {
   padding-right: 0.625em;
 }
 
+.grd-callout h4 {
+  color: #666;
+  font-size: 2em;
+  text-align: center;
+}
+
+#tetris-cntr {
+  column-gap: 0.5em;
+  display: none;
+  grid-template-columns: auto 156px auto;
+  grid-template-areas: "inst field score";
+}
+
+#tetris-instr {
+  color: steelblue;
+  grid-area: inst;
+  justify-content: right;
+  text-align: right;
+}
+#tetris-instr i {
+  color: #666;
+}
+
+#tetris-field {
+  grid-area: field;
+  text-align: left;
+}
+
+#tetris-score {
+  grid-area: score;
+  text-align: left;
+}
+#tetris-score .tetris-label {
+  font-size: 0.75em;
+}
+
+#tetris-score-val {
+  color: steelblue;
+  font-family: monospace;
+  font-size: 2em;
+}
+
 .project-summary {
   margin: 1em 0.625em;
 }
@@ -169,6 +215,43 @@ footer {
 .project-summary aside {
   display: inline-block;
   float: right;
+}
+
+.notey-tip {
+  border: solid 1px goldenrod;
+  border-radius: 5px;
+  width: 12rem;
+  height: 3rem;
+  background: #FFFFFFee;
+  position: absolute;
+  top: 3rem;
+  left: 3rem;
+  color: #555;
+  display: grid;
+  font-family: "Cabin Condensed", sans-serif;
+  font-size: 1.5rem;
+  grid-template-columns: 1.25rem auto;
+  grid-template-areas: "icon copy";
+}
+.notey-tip .nt-copy {
+  align-self: center;
+  display: block;
+  grid-area: copy;
+  text-align: center;
+}
+.notey-tip .nt-icon {
+  align-self: center;
+  background-color: orange;
+  border-bottom: #666;
+  border-left: #666;
+  border-top: #666;
+  border-bottom-left-radius: 5px;
+  border-top-left-radius: 5px;
+  color: white;
+  display: block;
+  font-size: 2rem;
+  grid-area: icon;
+  padding: 0.5rem 0.2rem;
 }
 
 /**
@@ -302,6 +385,12 @@ h4, h5, h6 {
 .dark {
   background-color: #88DF00;
   color: white;
+}
+.dark a, .dark a:visited {
+  color: white;
+}
+.dark a:hover, .dark a:visited:hover {
+  text-decoration: underline;
 }
 
 /*# sourceMappingURL=index.css.map */

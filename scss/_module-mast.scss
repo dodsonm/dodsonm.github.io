@@ -29,7 +29,7 @@
   }
 }
 .mast-main {
-  padding-bottom: 1.25em;
+  padding-bottom: 1em;
 }
 .mast-main, .mast-hed, .mast-dek {
   text-align: center;
@@ -59,4 +59,44 @@
 .mast-foot {
   padding-left: 0.625em;
   padding-right: 0.625em;
+}
+.grd-callout {
+  h4 {
+    color: #666;
+    font-size: 2em;
+    text-align: center;
+  }
+}
+#tetris-cntr {
+  column-gap: 0.5em;
+  display: none; // becomes GRID
+  grid-template-columns: auto 156px auto;
+  grid-template-areas: 'inst field score';
+}
+#tetris-instr {
+  color: steelblue;
+  grid-area: inst;
+  justify-content: right;
+  text-align: right;
+
+  i {
+    color: #666;
+  }
+}
+#tetris-field {
+  grid-area: field;
+  text-align: left;
+}
+#tetris-score {
+  grid-area: score;
+  text-align: left;
+
+  .tetris-label {
+    font-size: 0.75em;
+  }
+}
+#tetris-score-val {
+  color: steelblue;
+  font-family: monospace;
+  font-size: 2em;
 }

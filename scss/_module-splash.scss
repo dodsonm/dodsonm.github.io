@@ -1,3 +1,43 @@
+// intentionally using rem for fonts
+.notey-tip {
+  border: solid 1px goldenrod;
+  border-radius: 5px;
+  width: 12rem;
+  height: 3rem;
+  background: #FFFFFFee;
+  position: absolute;
+  top: 3rem;
+  left: 3rem;
+
+color: #555;
+display: grid;
+font-family: 'Cabin Condensed', sans-serif;
+font-size: 1.5rem;
+grid-template-columns: 1.25rem auto;
+grid-template-areas: 'icon copy';
+
+  .nt-copy {
+    align-self: center;
+    display: block;
+    grid-area: copy;
+    text-align: center;
+  }
+  .nt-icon {
+    align-self: center;
+    background-color: orange;
+    border-bottom: #666;
+    border-left: #666;
+    border-top: #666;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+    color: white;
+    display: block;
+    font-size: 2rem;
+    grid-area: icon;
+    padding: 0.5rem 0.2rem;
+  }
+}
+
 $default-border: solid 1px #aaa;
 $link-color: darken(#88DF00, 10%);
 /**

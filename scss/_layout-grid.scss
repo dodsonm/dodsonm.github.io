@@ -7,6 +7,7 @@
   grid-template-areas:
     'navi navi'
     'head head'
+    'callout callout'
     'main-left main-right'
     'foot foot'
   ;
@@ -16,6 +17,9 @@
 }
 .grd-navi {
   grid-area: navi;
+}
+.grd-callout {
+  grid-area: callout;
 }
 .grd-main-left {
   grid-area: main-left;
