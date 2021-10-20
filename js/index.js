@@ -2,6 +2,7 @@ import { GAME_CONFIG, init as initTetrish } from './tetrish-main.mjs';
 
 const gameActivator = document.querySelector('#tetris-activator');
 const gameHostEl = document.querySelector('#tetris-field');
+GAME_CONFIG.hostEl = gameHostEl;
 
 gameActivator.onclick = (e) => {
   e.preventDefault();
@@ -24,6 +25,3 @@ gameActivator.onclick = (e) => {
     }
   });
 }
-
-GAME_CONFIG.hostEl = gameHostEl;
-// initTetrish();

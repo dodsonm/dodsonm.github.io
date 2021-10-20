@@ -2,6 +2,7 @@ import Game from './modules/game.mjs';
 import GameBoard from './modules/game-board.mjs';
 import GameField from './modules/game-field.mjs';
 import GameLoop from './modules/game-loop.mjs';
+import Observer from './modules/observer.mjs';
 import Player from './modules/player.mjs';
 
 export const GAME_CONFIG = {
@@ -9,6 +10,7 @@ export const GAME_CONFIG = {
   cols: 12,
   get height() { return this.rows * this.scale },
   hostEl: document.querySelector('#tetrish-game'),
+  scoreEl: document.querySelector('#tetris-score-val'),
   ref: 'game-board',
   rows: 20,
   scale: 13,
@@ -28,6 +30,7 @@ export function init() {
   let player = new Player();
   let game = new Game(gameBoard, gameField, player);
   let gameLoop = new GameLoop();
+  let score = 0;
 
   game.readyPlayer();
   game.render();
@@ -46,5 +49,8 @@ export function init() {
       gameField.cleanup();
     }
   }
+  Observer.on(GameField.ROW_CLEARED, () => {
+    GAME_CONFIG.scoreEl.textContent = ++score;
+  });
   gameLoop.runGame();
 }

@@ -7,7 +7,6 @@ export default class GameController {
     this.game = game;
 
     document.addEventListener('keydown', (e) => {
-      console.log(e.keyCode);
       switch (e.keyCode) {
         case 65: // A (left)
           this.game.player.moveLeft();

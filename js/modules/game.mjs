@@ -30,19 +30,19 @@ export default class Game {
             this.field.matrix[y + o.y][x + o.x]) !== 0) { // current coordinate is not 0
               // left bound
               if (this.player.inner.x < 0) {
-                console.log('LEFT');
+                // console.log('LEFT');
                 // this.player.position.x = 0 - this.player.inner.dx;
               }
               // right bound
               if ((this.player.inner.x + this.player.width)
                   >= this.field.cols) {
-                console.log('RIGHT');
+                // console.log('RIGHT');
                 // this.player.position.x = this.field.cols - this.player.width
               }
               // bottom
               if ((this.player.inner.y + this.player.height)
                   > this.field.matrix.length) {
-                console.log('BOTTOM');
+                // console.log('BOTTOM');
                 // this.player.position.y = this.field.rows - this.player.height
               }
               return true;

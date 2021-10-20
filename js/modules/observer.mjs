@@ -1,3 +1,17 @@
+/**
+ * USAGE
+ * Note: all methods are static for now. Maybe rewrite as a mixin in the future.
+ *
+ * 1. Subscribe/Attach a listener
+ * Observer.on('ArbitraryEventLabel', callbackFunction);
+ *
+ * 2. Dispatch an Event
+ * Observer.dispatch('ArbritraryEventLabel', payloadData);
+ *
+ * 3. (NEEDS WORK) Unsubscribe/Detach a addEventListener
+ * Observer.cancel(eventId);
+ */
+
 export default class Observer {
   static actions = {};
   static subUid = -1;
